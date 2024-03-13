@@ -1,4 +1,8 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class StaticDataService {}
+export class StaticDataService {
+  getStaticData(): string {
+    return 'Données statiques';
+  }
+}

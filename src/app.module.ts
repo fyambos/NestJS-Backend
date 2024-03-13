@@ -8,7 +8,7 @@ import { LoggerMiddleware } from './logger/logger.middleware';
 
 @Module({
   imports: [StaticDataModule, DynamicDataModule],
-  controllers: [AppController, DataController],
+  controllers: [DataController, AppController],
   providers: [AppService],
 })
 export class AppModule implements NestModule {

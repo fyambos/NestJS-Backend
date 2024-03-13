@@ -9,4 +9,13 @@ export class DataController {
     private readonly dynamicDataService: DynamicDataService,
   ) {}
 
+  @Get('static')
+  getStaticData(): string {
+    return this.staticDataService.getStaticData();
+  }
+
+  @Get('dynamic')
+  getDynamicData(): string {
+    return this.dynamicDataService.getDynamicData();
+  }
 }
